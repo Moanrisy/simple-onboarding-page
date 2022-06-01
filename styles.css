@@ -1,0 +1,87 @@
+.onboarding-container, .onboarding-container * {
+    box-sizing: border-box;
+}
+
+.onboarding-container {
+    height: 100px;
+    width: 100%;
+    opacity: 0;
+}
+
+.onboarding-container.active {
+    opacity: 1;
+}
+
+.onboarding-container .content {
+    position: absolute;
+    bottom: 0px;
+    max-width: 400px;
+    padding: 24px;
+}
+
+.onboarding-container .steps {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.onboarding-container .step-wrap {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.onboarding-container .step-wrap > div {
+    float: left;
+    width: 99%;
+    position: relative;
+}
+
+.onboarding-container .title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 32px;
+}
+
+.onboarding-container .subtitle {
+    line-height: 1.4;
+    padding: 0 32px;
+}
+
+.onboarding-container .dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 32px;
+}
+
+.onboarding-container .dot {
+    width: 10px;
+    height: 10px;
+    background: #222;
+    border-radius: 50%;
+}
+
+.onboarding-container .dot.active {
+    background-color: aqua;
+}
+
+.onboarding-container .skip-btn {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.onboarding-container .next-btn {
+    width: 100%;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
