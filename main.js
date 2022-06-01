@@ -5,6 +5,11 @@ const nextBtn = document.querySelector(".onboarding-container .next-btn")
 const dots = document.querySelectorAll(".onboarding-container .dot")
 const bgImage = document.querySelector(".bg-image")
 
+setTimeout(function() {
+    document.querySelector(".splash").style.display = "none"
+    document.querySelector(".onboarding-container").classList.add("active")
+}, 2000)
+
 skipBtn.addEventListener("click", (e) => {
     e.preventDefault();
     onboardingContainer.classList.remove("active");
