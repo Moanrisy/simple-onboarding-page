@@ -46,5 +46,5 @@ window.mySwipe = new Swipe(steps, {
 
 function changeBackgroundImage(index) {
     const imagesUrl = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"]
-    bgImage.style.backgroundImage = `url('./${imagesUrl[index]}')`
+    bgImage.style.backgroundImage = `url('./img/${imagesUrl[index]}')`
 }
