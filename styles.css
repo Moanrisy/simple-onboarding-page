@@ -15,7 +15,7 @@
 .onboarding-container .content {
     position: absolute;
     bottom: 0px;
-    max-width: 400px;
+    max-width: 100%;
     padding: 24px;
 }
 
