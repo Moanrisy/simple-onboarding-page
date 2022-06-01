@@ -4,6 +4,7 @@ const steps = document.querySelector(".onboarding-container .steps")
 const nextBtn = document.querySelector(".onboarding-container .next-btn")
 const dots = document.querySelectorAll(".onboarding-container .dot")
 const bgImage = document.querySelector(".bg-image")
+const welcomePage = document.querySelector(".welcome")
 
 setTimeout(function() {
     document.querySelector(".splash").style.display = "none"
@@ -13,6 +14,7 @@ setTimeout(function() {
 skipBtn.addEventListener("click", (e) => {
     e.preventDefault();
     onboardingContainer.classList.remove("active");
+    welcomePage.classList.add("active")
 })
 
 nextBtn.addEventListener("click", () => {
@@ -20,6 +22,7 @@ nextBtn.addEventListener("click", () => {
     // remove onboarding when last item shown
     if(dots[3].classList.contains("active")) {
         skipBtn.click();
+        welcomePage.classList.add("active")
     }
 })
 
