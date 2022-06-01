@@ -9,7 +9,7 @@ const welcomePage = document.querySelector(".welcome")
 setTimeout(function() {
     document.querySelector(".splash").style.display = "none"
     document.querySelector(".onboarding-container").classList.add("active")
-}, 2000)
+}, 1000)
 
 skipBtn.addEventListener("click", (e) => {
     e.preventDefault();
