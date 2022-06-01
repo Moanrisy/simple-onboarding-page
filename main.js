@@ -3,6 +3,7 @@ const skipBtn = document.querySelector(".onboarding-container .skip-btn")
 const steps = document.querySelector(".onboarding-container .steps")
 const nextBtn = document.querySelector(".onboarding-container .next-btn")
 const dots = document.querySelectorAll(".onboarding-container .dot")
+const bgImage = document.querySelector(".bg-image")
 
 skipBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -30,6 +31,12 @@ window.mySwipe = new Swipe(steps, {
             e.classList.remove("active");
         })
         dots[index].classList.add("active")
+        changeBackgroundImage(index)
     },
     transitionEnd: function(index, element) {}
 });
+
+function changeBackgroundImage(index) {
+    const imagesUrl = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"]
+    bgImage.style.backgroundImage = `url('./${imagesUrl[index]}')`
+}
