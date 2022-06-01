@@ -9,7 +9,6 @@ body {
     height: 100%;
     width: 100%;
     background-color: yellow;
-    z-ind0ex: 1;
 }
 
 .bg-overlay {
@@ -19,6 +18,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
+    pointer-events: none;
 }
 
 .bg-image {
@@ -53,6 +53,7 @@ body {
     bottom: 0px;
     max-width: 100%;
     padding: 24px;
+    z-index: 2;
 }
 
 .onboarding-container .steps {
@@ -120,4 +121,19 @@ body {
     font-weight: bold;
     border: none;
     cursor: pointer;
+}
+
+.welcome {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.welcome.active {
+    opacity: 1;
 }
